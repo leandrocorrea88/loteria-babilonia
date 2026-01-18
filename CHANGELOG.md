@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/leandrocorrea88/loteria-babilonia/compare/v0.4.0...v0.5.0) (2026-01-18)
+
+
+### Features
+
+* N tentativas e Controle de Créditos ([db43214](https://github.com/leandrocorrea88/loteria-babilonia/commit/db43214f3e328e63106325b7495ceb1d68162198))
+
 ## [0.4.0](https://github.com/leandrocorrea88/loteria-babilonia/compare/v0.3.0...v0.4.0) (2026-01-18)
 
 
