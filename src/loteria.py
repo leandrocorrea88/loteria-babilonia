@@ -5,30 +5,51 @@ usuario a chance de acertar, com uma mensagem ao final indicando se acertou ou e
 
 # %%
 
-# Numero da sorte que o usuário tentará acertar (hardcoded)
-numero_da_sorte = 7
+import random as rnd
+
+# %%
+def valida_formato(msg_entrada):
+    """ Função que valida o formato de entrada dos créditos digitados pelo usuário """
+    while True:
+        try:
+            resultado = int(input(msg_entrada))
+            # Ao passar na validação, sair do while e continuar o fluxo
+            return resultado
+        except ValueError as err:
+            print("Por favor, insira um valor válido para a quantidade de créditos")
+
+
+def valida_formato_e_intervalo(msg_entrada, limite_inferior, limite_superior):
+    """ Função que valida o formato de entrada e intervalo das tentativas do usuário """
+    while True:
+        
+        # Testar formato
+        try:
+            resultado = int(input(msg_entrada))
+        except ValueError as err:
+            print("Por favor, insira um valor válido para acertar o número da sorte.\nSeu crédito atual não foi consumido")
+            continue
+
+        # Se passar, testar o intervalo
+        if limite_inferior <= resultado <= limite_superior:
+            return resultado
+        else:
+            print(f"Insira um valor entre {limite_inferior} e {limite_superior}.\nSeu crédito atual não foi consumido")
+
+# %%
+# Numero da sorte que o usuário tentará acertar (aleatório)
+numero_da_sorte = rnd.randint(a=1 , b=15)
 
 # Input 1 : Numero de tentativas variavel, com validação
-while True:
-    try:
-        creditos = int(input("Digite o numero de créditos"))
-        # Ao passar na validação, sair do while e continuar o fluxo
-        break
-    except ValueError as err:
-        print("Por favor, insira um valor válido para a quantidade de créditos")
-
+creditos = valida_formato("Digite o numero de créditos")
 creditos_restantes = creditos
 
 # Limitar as chances do usuário a, no maximo 3   
 for tentativa in range(creditos):
 
     # Input para o usuário digitar o número, gastando crédito somente com valores válidos
-    while True:
-        try:
-            numero_usuario = int(input(f"Tentativa {tentativa+1}: Digite um número entre 1 e 15, por favor"))
-            break
-        except ValueError as err:
-            print("Por favor, insira um valor válido entre 1 e 15.\nSeu crédito atual não foi consumido")
+    numero_usuario = valida_formato_e_intervalo(msg_entrada=f"Tentativa {tentativa+1}: Digite um número entre 1 e 15, por favor",
+                                                limite_inferior=1, limite_superior=15)
 
     # Consumir um credito
     creditos_restantes -= 1
