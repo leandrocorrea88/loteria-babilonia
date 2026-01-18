@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/leandrocorrea88/loteria-babilonia/compare/v0.2.0...v0.3.0) (2026-01-18)
+
+
+### Features
+
+* mensagem com o sentido do erro de palpite (maior/menor) ([266e9c7](https://github.com/leandrocorrea88/loteria-babilonia/commit/266e9c74092aa3e849b78f95cda0c3d037654e90))
+
 ## [0.2.0](https://github.com/leandrocorrea88/loteria-babilonia/compare/v0.1.0...v0.2.0) (2026-01-18)
 
 
