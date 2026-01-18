@@ -9,4 +9,5 @@ Criar uma loteria onde um número da sorte é escolhido e o usuário tenta acert
 2. GitHub e Git, na IDE VSCode
 
 ## Dinâmica do projeto
-O repositório foi criado direto no GitHub, porém toda a sua gestão será feita no VSCode usando as ferramentas integradas
+O repositório foi criado direto no GitHub, porém toda a sua gestão será feita no VSCode usando as 
+ferramentas integradas
