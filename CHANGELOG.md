@@ -5,7 +5,7 @@
 
 ### Features
 
-* funcoes-validacao-e-sorteio-numero-sorte ([#10](https://github.com/leandrocorrea88/loteria-babilonia/issues/10)) ([3530f71](https://github.com/leandrocorrea88/loteria-babilonia/commit/3530f71ab6e2197fe62e6807300288c2c225f195))
+* Implementação de funções de validação e números da sorte aleatórios a cada novo jogo ([#10](https://github.com/leandrocorrea88/loteria-babilonia/issues/10)) ([3530f71](https://github.com/leandrocorrea88/loteria-babilonia/commit/3530f71ab6e2197fe62e6807300288c2c225f195))
 
 ## [0.5.0](https://github.com/leandrocorrea88/loteria-babilonia/compare/v0.4.0...v0.5.0) (2026-01-18)
 
